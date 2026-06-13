@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gender Detection</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Gender Detection App</h1>
+
+        <form method="POST">
+
+            <input type="text" name="name" placeholder="Enter Name" required>
+
+            <button type="submit">Predict</button>
+
+        </form>
+
+        <h2>{{ prediction }}</h2>
+
+    </div>
+
+</body>
+</html>
